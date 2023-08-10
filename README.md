@@ -1,5 +1,8 @@
 a ToDo List created using NextJS 13.
 
+created based on youtube tutorial by Web Dev Simplified
+https://www.youtube.com/watch?v=NgayZAuTgwM
+
 Created using prisma and sqlite as database.
 
 step by step :
