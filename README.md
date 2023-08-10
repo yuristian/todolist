@@ -1,17 +1,17 @@
-a ToDo List created using NextJS 13.
+# a ToDo List created using NextJS 13.
 
 created based on youtube tutorial by Web Dev Simplified
-https://www.youtube.com/watch?v=NgayZAuTgwM
+* https://www.youtube.com/watch?v=NgayZAuTgwM
 
 Created using prisma and sqlite as database.
 
 step by step :
-1.  npx create-next-app@latest
-2.  install prisma
+## npx create-next-app@latest
+## install prisma
     npm i prisma --save-dev
-3.  initialize and use sqlite as datasource provider
+##  initialize and use sqlite as datasource provider
     npx prisma init --datasource-provider sqlite
-4.  create model in prisma/schema.prisma
+##  create model in prisma/schema.prisma
     model Todo {
       id String @id @default(uuid()) 
       title String
@@ -19,4 +19,4 @@ step by step :
       createdAt DateTime @default(now())
       updatedAt DateTime @updatedAt
     }
-5.  npx prisma migrate dev --name init
+##  npx prisma migrate dev --name init
