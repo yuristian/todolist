@@ -1,12 +1,14 @@
 # a ToDo List created using NextJS 13.
 
+## Description
 created based on youtube tutorial by Web Dev Simplified
 * https://www.youtube.com/watch?v=NgayZAuTgwM
 
 Created using prisma and sqlite as database.
 
 step by step :
-## npx create-next-app@latest
+## create new project
+    npx create-next-app@latest
 ## install prisma
     npm i prisma --save-dev
 ##  initialize and use sqlite as datasource provider
@@ -19,4 +21,5 @@ step by step :
       createdAt DateTime @default(now())
       updatedAt DateTime @updatedAt
     }
-##  npx prisma migrate dev --name init
+##  migrate prisma
+    npx prisma migrate dev --name init
