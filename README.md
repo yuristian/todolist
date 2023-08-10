@@ -10,3 +10,14 @@ install prisma
 
 initialize and use sqlite as datasource provider
 3. npx prisma init --datasource-provider sqlite
+
+create model in prisma/schema.prisma
+model Todo {
+  id String @id @default(uuid()) 
+  title String
+  complete Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+4. npx prisma migrate dev --name init
